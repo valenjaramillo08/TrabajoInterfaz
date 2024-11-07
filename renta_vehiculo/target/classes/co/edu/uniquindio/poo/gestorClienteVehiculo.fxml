@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="559.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.viewController.EmpresaViewController">
+   <children>
+      <Label layoutX="256.0" layoutY="24.0" text="Reserva">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="101.0" text="Cliente:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="176.0" text="Vehiculo:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox id="combo_cliente" fx:id="combo_cliente" layoutX="53.0" layoutY="132.0" prefHeight="25.0" prefWidth="185.0" />
+      <ChoiceBox id="combo_vehiculo" fx:id="combo_vehiculo" layoutX="53.0" layoutY="204.0" prefHeight="25.0" prefWidth="185.0" />
+      <Button id="id_boton_reserva" fx:id="boton_reserva" layoutX="256.0" layoutY="267.0" mnemonicParsing="false" onAction="#onCrearReserva" text="Crear Reserva">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="id_tabla" layoutX="40.0" layoutY="334.0" prefHeight="200.0" prefWidth="532.0">
+        <columns>
+          <TableColumn fx:id="id_columna_cliente" prefWidth="107.0" text="Cliente" />
+          <TableColumn fx:id="id_columna_vehiculo" prefWidth="113.0" text="Vehiculo" />
+            <TableColumn fx:id="colummna_inicio" prefWidth="110.0" text="Fecha Inicio" />
+            <TableColumn fx:id="columna_final" prefWidth="96.0" text="Fecha Final" />
+            <TableColumn fx:id="columna_costo" prefWidth="105.0" text="Costo" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="fecha_inicio" layoutX="317.0" layoutY="132.0" />
+      <DatePicker fx:id="fecha_final" layoutX="317.0" layoutY="204.0" />
+      <Label layoutX="317.0" layoutY="101.0" text="Fecha Inicio:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="319.0" layoutY="176.0" text="Fecha Final:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
